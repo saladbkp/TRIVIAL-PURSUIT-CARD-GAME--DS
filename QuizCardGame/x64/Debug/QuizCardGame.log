@@ -1,2 +1,4 @@
 ﻿  QuizCardGame.cpp
-  QuizCardGame.vcxproj -> C:\Users\khwon\Desktop\QuizCardGame\x64\Debug\QuizCardGame.exe
+C:\Users\khwon\Desktop\TRIVIAL-PURSUIT-CARD-GAME--DS\QuizCardGame\Games.h(92,28): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\khwon\Desktop\TRIVIAL-PURSUIT-CARD-GAME--DS\QuizCardGame\Decks.h(142): warning C4715: 'Deck::searchCard': not all control paths return a value
+  QuizCardGame.vcxproj -> C:\Users\khwon\Desktop\TRIVIAL-PURSUIT-CARD-GAME--DS\x64\Debug\QuizCardGame.exe

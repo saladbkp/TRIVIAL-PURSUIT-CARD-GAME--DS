@@ -1,3 +1,15 @@
 1/5
 start planning 
 player card class /
+
+4/5
+add round 
+simple game /
+simple game record
+
+to do 
+1.shuffle deck (get better )
+2.show player name
+3.scoreboard
+4.menu for playgame and show scoreboard selection
+5.clear screen after 1 round 
