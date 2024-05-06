@@ -20,25 +20,28 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Players.h">
+    <ClInclude Include="Players.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Cards.h">
+    <ClInclude Include="Cards.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Decks.h">
+    <ClInclude Include="Decks.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Games.h">
+    <ClInclude Include="Games.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Data.h">
+    <ClInclude Include="Data.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GameRecords.h">
+    <ClInclude Include="GameRecords.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="HashTable.h">
+    <ClInclude Include="HashTable.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="import.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

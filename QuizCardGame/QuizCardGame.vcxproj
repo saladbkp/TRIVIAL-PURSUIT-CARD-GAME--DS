@@ -130,13 +130,14 @@
     <ClCompile Include="QuizCardGame.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Cards.h" />
-    <ClInclude Include="Data.h" />
-    <ClInclude Include="Decks.h" />
-    <ClInclude Include="Games.h" />
-    <ClInclude Include="HashTable.h" />
-    <ClInclude Include="Players.h" />
-    <ClInclude Include="GameRecords.h" />
+    <ClInclude Include="Cards.hpp" />
+    <ClInclude Include="Data.hpp" />
+    <ClInclude Include="Decks.hpp" />
+    <ClInclude Include="Games.hpp" />
+    <ClInclude Include="HashTable.hpp" />
+    <ClInclude Include="import.h" />
+    <ClInclude Include="Players.hpp" />
+    <ClInclude Include="GameRecords.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

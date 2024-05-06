@@ -7,6 +7,10 @@ add round
 simple game /
 simple game record
 
+6/5
+vector to array /
+add import.hpp /
+
 to do 
 1.shuffle deck (get better )
 2.show player name
