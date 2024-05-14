@@ -1,0 +1,300 @@
+﻿1,The process of visiting each element in a data structure is called __________.,traversal,1
+2,"In a linked list, the last node points to __________.",null,1
+3,A __________ is a data structure that follows the Last-In-First-Out (LIFO) principle.,stack,1
+4,The time complexity of searching in a balanced binary search tree is __________.,O(log n),1
+5,A __________ is a data structure that follows the First-In-First-Out (FIFO) principle.,queue,1
+6,The worst-case time complexity of Quick Sort is __________.,O(n^2),1
+7,"In a binary tree, the number of children a node can have is at most __________.",two,1
+8,The height of a tree is defined as the number of edges on the __________ path from the root to a leaf.,longest,1
+9,"In a max heap, the __________ element is always at the root.",maximum,1
+10,A __________ is a collection of nodes where each node has at most two children.,binary tree,1
+11,The __________ sort algorithm has an average time complexity of O(n log n).,Merge,1
+12,The depth of a node in a tree is the number of __________ from the root to the node.,edges,1
+13,"In a graph, a cycle is a path that starts and ends at the __________ vertex.",same,1
+14,The __________ algorithm is used to find the shortest path in a weighted graph.,Dijkstra's,1
+15,"In a hash table, a __________ function is used to compute an index into an array of buckets.",hash,1
+16,A __________ is a linear data structure where elements can be inserted or deleted at both ends.,deque,1
+17,The __________ of a binary tree is the longest path from the root to a leaf node.,height,1
+18,__________ search is an algorithm used to find a target value within a sorted array.,Binary,1
+19,A __________ is a non-linear data structure consisting of nodes and edges.,graph,1
+20,"The __________ traversal of a binary tree visits nodes in the order: root, left, right.",preorder,1
+21,A __________ search tree is a binary tree where each node has a value greater than all nodes in its left subtree and less than all nodes in its right subtree.,binary search,1
+22,The __________ of a graph is the number of edges divided by the number of vertices.,density,1
+23,"In the context of graphs, a __________ is a sequence of vertices where each adjacent pair is connected by an edge.",path,1
+24,The __________ algorithm is used to traverse or search tree or graph data structures in a breadthward motion.,breadth-first search,1
+25,A __________ list is a collection of nodes where each node contains a data element and a reference (link) to the next node in the sequence.,linked,1
+26,The __________ sort algorithm builds the final sorted array one item at a time.,insertion,1
+27,"A __________ is an ordered collection of elements of the same type, typically indexed by integers.",array,1
+28,"In a directed graph, an edge has a direction, going from one vertex () to another destination.",source,1
+29,__________ is a recursive algorithm used to solve the problem of arranging objects in a linear sequence.,Backtracking,1
+30,A __________ is a set of nodes connected by edges where there are no cycles.,tree,1
+31,__________ search is an algorithm that finds the position of a target value within an array.,Linear,1
+32,A __________ is a tree where each node has at most two children.,binary,1
+33,The __________ property of a min-heap ensures that the parent node is less than or equal to its children.,heap,1
+34,"__________ is a sorting algorithm that repeatedly steps through the list to be sorted, compares adjacent elements, and swaps them if they are in the wrong order.",Bubble,1
+35,A __________ is a collection of key-value pairs where each key is unique.,dictionary,1
+36,"__________ traversal of a binary tree visits nodes in the order: left, root, right.",Inorder,1
+37,"In an undirected graph, if there is a path between every pair of vertices, the graph is said to be __________.",connected,1
+38,"The __________ data structure allows insertion, deletion, and access of elements in constant average time.",hash table,1
+39,The __________ of a node in a binary tree is the number of children it has.,degree,1
+40,__________ is the process of converting a weakly structured heap into a well-structured heap.,Heapifying,1
+41,"In a binary tree, the __________ traversal visits nodes in the order: left, right, root.",postorder,1
+42,The __________ of a tree is the number of nodes along the path from the root to the farthest leaf node.,height,1
+43,"In a graph, __________ is the process of visiting all the nodes exactly once.",traversal,1
+44,A __________ algorithm is an algorithm that calls itself with a simpler problem as input.,recursive,1
+45,"In a __________ tree, each node has a degree of at most two.",binary,1
+46,The __________ algorithm is used to find the minimum spanning tree of a graph.,Kruskal's,1
+47,"In a hash table, __________ is a technique used to handle collisions.",chaining,1
+48,The __________ time complexity describes the time required to run an algorithm as a function of the length of the input.,time,1
+49,__________ is a graph traversal algorithm that starts at the root and explores the neighbor nodes at the present depth prior to moving on to nodes at the next depth level.,Breadth-first search,1
+50,A __________ is a tree where every node has either 0 or 2 children.,full,1
+51,The __________ notation represents the upper bound of an algorithm's running time.,Big O,1
+52,"In a binary search tree, the __________ node is the node with the smallest key greater than a given node.",successor,1
+53,The __________ of a graph is a maximal set of vertices such that there is no edge between any two vertices in the set.,independent set,1
+54,A __________ sort algorithm works by partitioning an array into smaller sub-arrays and sorting them.,merge,1
+55,__________ is a data structure that stores elements in sorted order.,Tree,1
+56,"In a directed graph, a __________ is a sequence of edges that connect a sequence of vertices.",path,1
+57,The __________ search algorithm is used to find an element in a list by repeatedly dividing the search interval in half.,binary,1
+58,A __________ is a data structure where each element points to its successor and possibly its predecessor.,linked list,1
+59,The __________ traversal of a tree visits each node level by level.,level-order,1
+60,__________ is an algorithm for finding the shortest paths between nodes in a graph.,Dijkstra's,1
+61,"In a max heap, the __________ child of a node is always smaller than the node.",left,1
+62,The __________ of a node is the number of edges connecting it to other nodes.,degree,1
+63,__________ sorting algorithms use comparison to determine the order of elements.,Comparison,1
+64,"In a __________ graph, each edge connects two different vertices.",simple,1
+65,A __________ is a binary tree in which the height of the left and right subtrees of any node differ by at most one.,balanced,1
+66,The __________ sort algorithm is known for its simplicity and ease of implementation.,bubble,1
+67,A __________ is a collection of nodes connected by edges without any cycles.,tree,1
+68,"The __________ traversal of a binary tree visits nodes in the order: root, right, left.",preorder,1
+69,"In a __________ search tree, each node's value is greater than all the values in its left subtree and less than all the values in its right subtree.",binary,1
+70,The __________ property of a max-heap ensures that the parent node is greater than or equal to its children.,heap,1
+71,"In a graph, a __________ is a set of vertices and edges forming a closed loop.",cycle,1
+72,The __________ notation represents the lower bound of an algorithm's running time.,Big Omega,1
+73,A __________ is a collection of elements where duplicate values are not allowed.,set,1
+74,The __________ of a graph is the number of edges in the largest path between any two vertices.,diameter,1
+75,"In a __________ graph, each pair of vertices is connected by a unique edge.",complete,1
+76,The __________ sort algorithm repeatedly finds the minimum element from the unsorted part and puts it at the beginning.,selection,1
+77,__________ is a data structure that allows elements to be added or removed from both ends.,deque,1
+78,"A __________ is a special tree where each node has at most two children, often used for binary search trees.",binary tree,1
+79,The __________ search algorithm works by splitting the array into smaller segments and sorting them.,merge,1
+80,"In a binary tree, the __________ traversal visits nodes in the order: right, root, left.",reverse inorder,1
+81,A __________ is a data structure where each node contains a reference to the next node and possibly to the previous node.,doubly linked list,1
+82,The __________ of a graph is the smallest number of edges that can be removed to disconnect the remaining graph.,cut-set,1
+83,__________ is the process of ensuring that a binary search tree remains balanced after insertions and deletions.,rebalancing,1
+84,"In a priority queue, elements are removed based on their __________.",priority,1
+85,A __________ is a data structure that stores elements in a hierarchical order.,tree,1
+86,The __________ algorithm is used to find the minimum cost spanning tree of a graph.,Prim's,1
+87,The __________ search algorithm finds the shortest path from a single source to all other nodes in a weighted graph.,Dijkstra's,1
+88,A __________ is a connected acyclic graph.,tree,1
+89,__________ sorting algorithms use a non-comparison-based technique to sort elements.,Radix,1
+90,"In a __________ graph, all edges have the same weight.",unweighted,1
+91,"The __________ sort algorithm divides the input array into two halves, sorts them, and then merges them.",merge,1
+92,A __________ is a binary tree in which each node has either 0 or 2 children.,full,1
+93,"The __________ property of a binary search tree ensures that for each node, all nodes in its left subtree have smaller values, and all nodes in its right subtree have larger values.",binary search,1
+94,__________ is a data structure that allows adding elements to one end and removing elements from the other.,queue,1
+95,"In a graph, a __________ is a sequence of vertices where each adjacent pair is connected by a direct edge.",path,1
+96,The __________ sort algorithm builds the sorted list one element at a time by repeatedly inserting elements in the correct position.,insertion,1
+97,"A __________ is a tree data structure in which each node has at most two children, commonly used for searching.",binary search tree,1
+98,The __________ search algorithm repeatedly splits the data into halves until the search item is found.,binary,1
+99,"A __________ is a dynamic set where each element has a unique key, supporting operations such as insertion, deletion,",dictionary,1
+100,"A __________ is a way of organizing data in computer memory,",data structure,1
+101,A __________ is a type of self-balancing binary search tree that has properties ensuring the tree remains balanced.,red-black tree,2
+102,"In graph theory, an __________ is a way of representing a graph as a collection of unordered lists.",adjacency list,2
+103,The __________ algorithm is used to find the shortest paths between all pairs of vertices in a weighted graph.,Floyd-Warshall,2
+104,A __________ of a graph is a subgraph that is a tree and connects all the vertices together.,spanning tree,2
+105,The __________ algorithm is capable of handling graphs with negative weight edges.,Bellman-Ford,2
+106,"In a __________ approach, subproblems are solved and their solutions are stored for future reference.",dynamic programming,2
+107,__________ is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls.,Memoization,2
+108,__________ is used to find the minimum spanning tree by sorting all edges and adding the shortest edge to the growing spanning tree.,Kruskal's algorithm,2
+109,"A __________ is a self-balancing tree data structure that maintains sorted data and allows searches, sequential access, insertions, and deletions in logarithmic time.",B-tree,2
+110,"In a __________, the node with the largest value in the left subtree is called the __________.","binary search tree, predecessor",2
+111,A __________ data structure can be represented using an array where each parent node is at index i and its children are at indices 2i + 1 and 2i + 2.,heap,2
+112,The __________ algorithm is used for substring search within a text.,Knuth-Morris-Pratt (KMP),2
+113,__________ is used for finding strongly connected components in a directed graph.,Tarjan's algorithm,2
+114,A __________ is an abstract data type in which each element is associated with a priority.,priority queue,2
+115,The __________ is a self-balancing binary search tree where the difference between heights of left and right subtrees cannot be more than one.,AVL tree,2
+116,__________ is a non-comparative integer sorting algorithm that sorts data with integer keys by grouping keys by individual digits.,Radix sort,2
+117,__________ can be implemented using a stack data structure.,Depth-First Search (DFS),2
+118,__________ can be implemented using a queue data structure.,Breadth-First Search (BFS),2
+119,"In a __________ data structure, each set is represented by a tree, and each node points to its parent.",disjoint-set,2
+120,__________ is the technique used to keep the height of an AVL tree balanced.,rotations,2
+121,The __________ algorithm is used to find all shortest paths in a graph with non-negative weights.,Dijkstra's,2
+122,"In a __________ tree, nodes are inserted in a way that maintains the properties of the tree.",binary search tree,2
+123,A __________ tree is a tree where each node has exactly zero or two children.,full,2
+124,"The __________ property ensures that for every node in a red-black tree, all paths from the node to descendant leaves contain the same number of black nodes.",black-height,2
+125,"A __________ graph is a graph in which edges have a direction, going from one vertex to another.",directed,2
+126,"In a __________, nodes represent states and edges represent transitions between those states.",state machine,2
+127,__________ is a traversal algorithm that visits all the nodes in a graph level by level.,Breadth-First Search (BFS),2
+128,"In a __________ search algorithm, we check if the middle element of the array is the desired element.",binary search,2
+129,The __________ algorithm is used to sort data by repeatedly partitioning the array into subarrays and sorting them.,Quick Sort,2
+130,"In a __________, each element points to its successor and its predecessor.",doubly linked list,2
+131,The __________ algorithm is used to find the shortest path from a single source node to all other nodes in a graph with non-negative edge weights.,Dijkstra's,2
+132,A __________ is a graph traversal algorithm that explores as far as possible along each branch before backtracking.,Depth-First Search (DFS),2
+133,__________ sort is an in-place sorting algorithm that builds the final sorted array one item at a time.,Insertion sort,2
+134,The __________ sort algorithm is based on the divide-and-conquer technique.,Merge sort,2
+135,A __________ is a linear data structure that allows elements to be added or removed from one end.,stack,2
+136,"In __________ sorting algorithms, elements are compared to each other to determine their order.",Comparison,2
+137,The __________ property of a min-heap ensures that the key at a parent node is less than or equal to the keys of its children.,heap,2
+138,"In a __________, all vertices are connected with each other with the minimum possible total edge weight.",minimum spanning tree,2
+139,__________ is a method for representing graphs by using a matrix to show connections between nodes.,adjacency matrix,2
+140,"In a __________, elements are inserted and removed according to their priority.",priority queue,2
+141,__________ is a technique to break down a problem into smaller subproblems which are then solved independently.,Divide and conquer,2
+142,A __________ list is a linear data structure where each element contains a reference to the next element.,linked,2
+143,"In __________ sorting, elements are grouped by their individual digits which share the same significant position and value.",Radix,2
+144,__________ is an algorithm used to sort an array of elements by repeatedly finding the minimum element and moving it to the sorted portion.,Selection sort,2
+145,A __________ is a data structure used to represent a set where each element belongs to a subset.,disjoint-set,2
+146,__________ is a self-adjusting binary search tree with the additional property that recently accessed elements are quick to access again.,Splay tree,2
+147,__________ is the process of reorganizing the heap in order to maintain the heap property.,heapify,2
+148,A __________ graph is a graph with no cycles.,acyclic,2
+149,"In __________ search, the search space is divided into smaller sections using a pivot element.",Quick,2
+150,__________ is an optimization technique that solves complex problems by breaking them down into simpler subproblems.,Dynamic programming,2
+151,The __________ algorithm is used to determine the presence of negative weight cycles in a graph.,Bellman-Ford,2
+152,__________ is the process of ensuring that a binary search tree remains balanced after insertions and deletions.,rebalancing,2
+153,A __________ is a linear data structure that allows elements to be inserted at one end and removed from the other end.,queue,2
+154,"In a __________ tree, each node has at most two children, and the tree is maintained in such a way that it remains balanced.",AVL,2
+155,__________ is a technique used to handle hash collisions by chaining elements in linked lists.,Chaining,2
+156,A __________ is a graph traversal algorithm that uses a stack to explore all vertices.,Depth-First Search (DFS),2
+157,__________ is an algorithm that solves problems by building up solutions to subproblems and combining them.,Dynamic programming,2
+158,"In a __________, each element points to the next, forming a chain of elements.",linked list,2
+159,__________ is a sorting algorithm that repeatedly swaps adjacent elements if they are in the wrong order.,Bubble sort,2
+160,The __________ algorithm is used to find the maximum flow in a flow network.,Ford-Fulkerson,2
+161,__________ is a data structure where elements are stored in a way that allows fast lookup by key.,hash table,2
+162,"In a __________, each node has a left child, a right child, and possibly a parent.",binary tree,2
+163,__________ is a sorting algorithm that sorts elements by repeatedly partitioning the array into subarrays.,Quick sort,2
+164,A __________ is a linear data structure that allows elements to be inserted at one end and removed from the other.,queue,2
+165,"In a __________, elements are arranged in a hierarchy, with each element having a parent and zero or more children.",tree,2
+166,The __________ algorithm is used to find the shortest path between a starting node and all other nodes in a graph.,Dijkstra's,2
+167,A __________ is a binary tree where each node has at most two children and all levels are filled except possibly the last.,complete,2
+168,__________ is a method of sorting where each element is placed at a specific position based on its value.,Counting,2
+169,The __________ algorithm is used to sort elements by repeatedly comparing and swapping adjacent elements.,Bubble,2
+170,__________ is an algorithm that finds the longest common subsequence of two sequences.,dynamic programming,2
+171,"In a __________, elements are stored in a way that allows fast lookup, insertion, and deletion by key.",hash table,2
+172,__________ is a data structure that uses a hash function to map keys to buckets where elements are stored.,hash table,2
+173,A __________ is a sorting algorithm that builds the final sorted array one element at a time by repeatedly inserting elements in the correct position.,Insertion sort,2
+174,__________ is an algorithm that solves problems by breaking them down into subproblems and building up solutions to the subproblems.,Divide and conquer,2
+175,"In a __________ tree, each node has a value greater than all the values in its left subtree and less than all the values in its right subtree.",binary search tree,2
+176,__________ is a method of handling hash collisions by using linked lists to store elements that hash to the same index.,Chaining,2
+177,A __________ is a binary tree where the parent node is greater than or equal to its children.,max heap,2
+178,__________ is an algorithm used to find the shortest paths between nodes in a graph.,Dijkstra's,2
+179,"In a __________, each element is associated with a priority, and elements are added and removed according to their priority.",priority queue,2
+180,__________ is a technique used to maintain a balanced binary search tree after insertions and deletions.,Rotations,2
+181,The __________ algorithm is used to find the shortest path from a single source node to all other nodes in a graph with negative edge weights.,Bellman-Ford,2
+182,A __________ is a binary tree in which the parent node is less than or equal to its children.,min heap,2
+183,__________ is a method of representing graphs using a list of edges.,edge list,2
+184,"In a __________, elements are added and removed according to their priority.",priority queue,2
+185,__________ is an algorithm that solves problems by breaking them down into subproblems and building up solutions to the subproblems.,dynamic programming,2
+186,A __________ is a linear data structure where elements are added and removed from one end.,stack,2
+187,__________ is a data structure that allows elements to be added and removed from both ends.,deque,2
+188,"In a __________, each element points to its successor, forming a chain of elements.",linked list,2
+189,__________ is an algorithm that sorts elements by repeatedly partitioning the array into subarrays and sorting them.,Quick sort,2
+190,The __________ algorithm is used to find the minimum spanning tree of a graph.,Kruskal's,2
+191,__________ is a data structure that uses a hash function to map keys to buckets where elements are stored.,hash table,2
+192,A __________ is a graph traversal algorithm that uses a stack to explore all vertices.,Depth-First Search (DFS),2
+193,__________ is a technique used to handle hash collisions by using linked lists to store elements that hash to the same index.,Chaining,2
+194,"In a __________, each node has at most two children, and the tree is maintained in such a way that it remains balanced.",AVL tree,2
+195,__________ is an algorithm that solves problems by breaking them down into subproblems and building up solutions to the subproblems.,Dynamic programming,2
+196,A __________ is a binary tree where each node has at most two children and all levels are filled except possibly the last.,complete,2
+197,__________ is a sorting algorithm that builds the final sorted array one element at a time by repeatedly inserting elements in the correct position.,Insertion sort,2
+198,The __________ algorithm is used to find the shortest path from a single source node to all other nodes in a graph.,Dijkstra's,2
+199,__________ is a method of sorting where each element is placed at a specific position based on its value.,Counting sort,2
+200,"In a __________, elements are stored in a way that allows fast lookup, insertion, and deletion by key.",hash table,2
+201,The __________ algorithm is used to find all articulation points in a graph.,Tarjan's,3
+202,A __________ is a binary tree where each node has at most three children.,ternary tree,3
+203,The __________ technique in dynamic programming is used to transform a recursive solution into an iterative one using a table.,tabulation,3
+204,"In a __________ heap, both the minimum and maximum elements can be accessed in constant time.",double-ended priority queue,3
+205,The __________ algorithm is used for solving the all-pairs shortest path problem on dense graphs.,Johnson's,3
+206,A __________ is a spanning tree in which the weight of the edges is minimized.,minimum spanning tree,3
+207,__________ trees maintain a balance by splitting and merging nodes during insertions and deletions.,B-trees,3
+208,The __________ problem is a classical optimization problem that aims to find the minimum number of coins needed to make a given amount.,coin change,3
+209,The __________ algorithm finds the longest path in a directed acyclic graph (DAG).,Dynamic programming,3
+210,"In a __________ sort, elements are sorted based on the frequency of their appearance.",frequency,3
+211,"A __________ is a data structure where each node has a parent pointer, a child pointer, and a sibling pointer.",threaded tree,3
+212,The __________ algorithm is used to solve the maximum flow problem in a flow network.,Edmonds-Karp,3
+213,__________ is a technique in which subproblems are solved once and their solutions are reused.,Memoization,3
+214,"In a __________ tree, each node stores an additional balance factor that helps in keeping the tree balanced.",AVL,3
+215,The __________ algorithm can find a minimum cut in a flow network.,Ford-Fulkerson,3
+216,A __________ is a generalization of a binary search tree where nodes can have more than two children.,B-tree,3
+217,The __________ problem involves finding the largest square sub-matrix with all 1s in a binary matrix.,maximal square,3
+218,"In __________ hashing, multiple hash functions are used to reduce collisions.",Cuckoo,3
+219,The __________ algorithm can be used to find the longest increasing subsequence in a sequence of numbers.,Patience sorting,3
+220,A __________ is a self-balancing binary search tree with relaxed balancing criteria compared to AVL trees.,Red-Black tree,3
+221,The __________ algorithm is used to find all pairs of nodes that have a common ancestor in a tree.,Lowest Common Ancestor (LCA),3
+222,A __________ tree is a type of balanced tree that uses rotations to maintain balance after insertions and deletions.,AVL,3
+223,The __________ number problem involves finding the nth Fibonacci number using dynamic programming.,Fibonacci,3
+224,__________ is an algorithm that partitions a list into two parts and sorts them independently.,Quick sort,3
+225,"In a __________ tree, each node stores the sum of the values in its subtree.",segment,3
+226,The __________ algorithm can find the smallest set of vertices that can reach all other vertices in a directed graph.,Greedy,3
+227,"A __________ is a data structure that supports insertions, deletions, and find-min operations in logarithmic time.",Treap,3
+228,The __________ algorithm is used to find the diameter of a tree.,Tree diameter,3
+229,"In a __________ network, each node is connected to every other node.",complete,3
+230,The __________ method is used to solve optimization problems by iteratively improving the solution.,Greedy,3
+231,A __________ tree is a binary tree that maintains its balance through a series of rotations.,Splay,3
+232,The __________ algorithm finds the minimum spanning tree by adding the shortest edge that does not form a cycle.,Kruskal's,3
+233,A __________ graph is a graph that can be embedded in the plane without any edges crossing.,planar,3
+234,The __________ algorithm finds the strongly connected components of a directed graph.,Kosaraju's,3
+235,__________ is an algorithm used to solve the problem of finding the maximum subarray sum.,Kadane's,3
+236,A __________ tree is a type of balanced tree that maintains its balance by splitting nodes that are too full.,02-Mar,3
+237,The __________ algorithm is used to find the k-th smallest element in an unsorted array.,Quickselect,3
+238,A __________ tree is a binary tree in which each node has exactly two children and all leaves are at the same level.,full,3
+239,The __________ algorithm finds the longest common subsequence of two sequences.,dynamic programming,3
+240,A __________ is a self-balancing search tree where each node contains a color attribute.,Red-Black tree,3
+241,The __________ algorithm is used to solve the problem of finding the smallest window in an array that contains all unique elements.,Sliding window,3
+242,"In a __________ tree, each node contains a fixed number of children.",B,3
+243,The __________ algorithm can find the maximum weight independent set in a tree.,Dynamic programming,3
+244,A __________ is a linear data structure that allows elements to be added or removed from both ends.,Deque,3
+245,The __________ algorithm is used to find the largest rectangle containing only 1s in a binary matrix.,maximal rectangle,3
+246,A __________ heap is a type of heap where each node has multiple children and the heap property is maintained.,Binomial,3
+247,The __________ algorithm is used to find the minimum edit distance between two strings.,Levenshtein,3
+248,A __________ tree is a self-adjusting binary search tree that performs rotations to move accessed elements closer to the root.,Splay,3
+249,The __________ algorithm is used to solve the problem of finding the maximum product subarray.,Dynamic programming,3
+250,A __________ is a data structure that supports efficient prefix queries and updates.,Fenwick tree,3
+251,The __________ algorithm is used to find the shortest path in a graph with positive and negative edge weights.,Bellman-Ford,3
+252,A __________ is a linear data structure where elements are stored in a circular order.,circular buffer,3
+253,The __________ algorithm can find the longest palindromic subsequence in a sequence of characters.,Dynamic programming,3
+254,"In __________ search, the search space is divided into smaller sections using a pivot element.",Quick,3
+255,The __________ problem involves finding the maximum sum path in a triangle of numbers.,Dynamic programming,3
+256,A __________ tree is a type of balanced tree that splits nodes when they become too full.,B-tree,3
+257,The __________ algorithm is used to solve the problem of finding the maximum sum rectangle in a matrix.,Kadane's,3
+258,A __________ heap is a type of heap that allows efficient merging of two heaps.,Fibonacci,3
+259,The __________ algorithm is used to find the k-th largest element in an unsorted array.,Quickselect,3
+260,A __________ tree is a binary tree in which all levels are completely filled except possibly the last.,complete,3
+261,The __________ algorithm can find the longest common prefix among a set of strings.,Trie,3
+262,A __________ is a self-balancing binary search tree with relaxed balancing criteria compared to red-black trees.,Scapegoat,3
+263,The __________ algorithm is used to find the minimum number of insertions and deletions to transform one string into another.,Wagner-Fischer,3
+264,A __________ tree is a type of balanced tree that maintains its balance through a series of rotations.,AVL,3
+265,The __________ algorithm is used to find the minimum spanning forest in a graph.,Borůvka's,3
+266,A __________ graph is a graph in which each pair of vertices is connected by a unique path.,Tree,3
+267,The __________ algorithm can find the largest square sub-matrix with all 0s in a binary matrix.,Dynamic programming,3
+268,A __________ heap is a type of heap that supports efficient decrease-key operations.,Fibonacci,3
+269,The __________ algorithm is used to find the longest path in a graph.,Dynamic programming,3
+270,A __________ tree is a type of binary search tree where nodes are inserted and deleted in a way that maintains the tree's balance.,AVL,3
+271,The __________ algorithm finds the maximum sum increasing subsequence in a sequence of numbers.,Dynamic programming,3
+272,A __________ is a data structure that supports efficient range queries and updates.,Segment tree,3
+273,The __________ algorithm can find the minimum number of operations to transform one sequence into another.,Wagner-Fischer,3
+274,A __________ tree is a type of balanced tree that splits and merges nodes to maintain balance.,02-Mar,3
+275,The __________ algorithm is used to find the shortest path in a weighted graph with negative edge weights.,Bellman-Ford,3
+276,A __________ graph is a graph in which every pair of vertices is connected by a unique edge.,Complete,3
+277,The __________ algorithm can find the longest increasing path in a matrix.,Dynamic programming,3
+278,A __________ heap is a type of heap that supports efficient delete operations.,Binomial,3
+279,The __________ algorithm is used to find the maximum sum sub-matrix in a matrix.,Kadane's,3
+280,A __________ tree is a type of balanced binary search tree that uses rotations to maintain balance.,AVL,3
+281,The __________ algorithm can find the smallest enclosing circle for a set of points.,Welzl's,3
+282,A __________ is a data structure that supports efficient substring search.,Suffix tree,3
+283,The __________ algorithm is used to find the maximum sum path in a binary tree.,Dynamic programming,3
+284,A __________ tree is a type of binary tree where each node has exactly one child.,skewed,3
+285,The __________ algorithm can find the longest palindromic substring in a sequence of characters.,Dynamic programming,3
+286,A __________ heap is a type of heap that supports efficient meld operations.,Pairing,3
+287,The __________ algorithm is used to solve the problem of finding the minimum number of jumps to reach the end of an array.,Greedy,3
+288,A __________ tree is a type of self-balancing binary search tree that uses balancing information to maintain balance.,AVL,3
+289,The __________ algorithm can find the minimum spanning tree in a graph with negative edge weights.,Kruskal's,3
+290,A __________ graph is a graph in which all vertices are connected to each other.,complete,3
+291,The __________ algorithm can find the maximum sum path in a grid.,Dynamic programming,3
+292,A __________ heap is a type of heap that supports efficient find-min and delete-min operations.,Binomial,3
+293,The __________ algorithm is used to find the minimum cost path in a grid.,Dynamic programming,3
+294,A __________ tree is a type of binary tree where nodes are inserted and deleted to maintain balance.,AVL,3
+295,The __________ algorithm can find the longest path in a binary tree.,Dynamic programming,3
+296,A __________ is a data structure that supports efficient prefix sum queries and updates.,Fenwick tree,3
+297,The __________ algorithm is used to find the minimum number of swaps to sort an array.,Minimum swaps,3
+298,The __________ algorithm is used to detect cycles in a directed graph.,Floyd-Warshall,3
+299,The __________ algorithm can find the maximum sum path in a triangle of numbers.,Dynamic programming,3
+300,A __________ is a data structure that supports efficient range minimum queries.,Segment tree,3
