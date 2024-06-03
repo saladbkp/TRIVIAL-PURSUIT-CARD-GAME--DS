@@ -14,27 +14,34 @@ public:
     Game(int round, Player players[], Deck deck) : round(round), players(players), deck(deck), gamerecord(GetPlayerNum()* round) {}
 
     void initGame() {
+        ////////////////// testing temp
+        gamerecord.generateLeaderboard();
+        system("pause");
+
         cout << "This game has " << round << " round" << endl;
-        cout << "Players: " << endl;
+        cout << "\nPlayers: " << endl;
         for (int i = 0; i < playerNum;i++) {
             cout << "  - " << players[i].name << " with ID " << players[i].id << endl;
         }
-        cout << "Deck: " << endl;
+        cout << "\nDeck: " << endl;
         deck.printDeck();
     }
 
     void playGame() {
         // only 1 round for now 
         int playerNum = GetPlayerNum();
+        clearScreenAndWait();
+       
+
         for (int ro = 0; ro < round; ro++) {
-            cout << "\nRound : " << ro << endl;
+            cout << "\nRound : " << ro+1 << endl;
             for (int i = 0; i < playerNum; i++) {
                 while (true) {
                     
                     
                     cout << "---------------------------------------------" << endl;
-                    cout << "No Player : " << i << endl;
-                    cout << "Do u want to draw a card? (Y/N): ";
+                    cout << "No Player : " << players[i].id << ", Name: " << players[i].name << "\n" << endl;
+                    cout << "Do u want to draw a card? (y/n): ";
                     string choice;
                     cin >> choice;
                     if (choice.compare("y") == 0) {
@@ -42,26 +49,31 @@ public:
                         deck.printDisCard();
                         deck.printAnsCard();
 
-                        cout << "Select the card u want to answer (ID/n for pass) : ";
+                        cout << "\nSelect the card u want to answer (ID/n for pass) : ";
                         cin >> choice;
                         int cardSelected = deck.unansweredHead->card.id; // get cur card id
+                         
                         if (choice.compare("n") != 0) {
-                            if (cardSelected == stoi(choice)) {
-                                cout << "Ans: ";
+                            int cardSelected = stoi(choice);                            
+                            int cardSelectedFrom = deck.searchCardFrom(cardSelected);
+
+                            if (cardSelectedFrom >0) {
+                                cout << "\nAns: ";
                                 cin >> choice;
-                                int score = deck.verifyAnsCard(cardSelected, choice);
-                                gamerecord.addRecords(ro, players[i], deck.searchCard(cardSelected), score);
-                                deck.drawCard(cardSelected, 1);
+                                int score = deck.verifyAnsCard(cardSelected, choice, cardSelectedFrom);
+                                gamerecord.addRecords(ro+1, players[i], deck.searchCard(cardSelected, cardSelectedFrom), score);
+                                deck.drawCard(cardSelected, cardSelectedFrom); // 1 from unans 2 from discard
                                 if (score != 0) {
-                                    cout << "Congratulations + " << score << endl;
+                                    cout << "\nCongratulations + " << score << endl;
                                 }
                                 else {
-                                    cout << "Opps ..." << endl;
+                                    cout << "\nOpps ..." << endl;
                                 }
                                 break;
                             }
+                            
                             else {
-                                cout << "The id not match ..." << endl;
+                                cout << "\nThe id not match ..." << endl;
                             }
                         }
                         else {
@@ -73,9 +85,11 @@ public:
                         break;
                     }
                     else {
-                        cout << "Invalid choice..." << endl;
+                        cout << "\nInvalid choice..." << endl;
                     }
+                    
                 }
+                clearScreenAndWait();
             }
         }
     }
@@ -87,4 +101,13 @@ public:
     int GetPlayerNum() {
         return playerNum;
     }
+
+    void clearScreenAndWait() {  
+        // Wait for the user to press any key
+        cout << "\nPress any key to continue...";
+        _getch();
+        // Clear the screen
+        system("cls");
+    }
+
 };

@@ -14,9 +14,32 @@ add import.hpp /
 15/5
 Added Questions.csv
 
+1/6
+can read question.csv
+flow of game 
+
+2/6
+updating tree
+
 to do 
-1.shuffle deck (get better )
+1.shuffle deck (get better ) https://www.cnblogs.com/DAYceng/p/17473842.html
 2.show player name
 3.scoreboard
 4.menu for playgame and show scoreboard selection
 5.clear screen after 1 round 
+
+ds implement:
+readcsv: array
+deck: linked list
+game record: hashmap
+player: stack
+rank: tree
+
+queue
+graph
+
+algo:
+shuffle: knuth semua sama probability 
+simple loop: hashmap get
+simple loop search: search rank
+binary search: search player id

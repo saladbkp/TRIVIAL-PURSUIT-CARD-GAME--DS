@@ -24,7 +24,7 @@ public:
 
     void drawCard(int id,int move) {
 
-        Card card = searchCard(id);
+        Card card = searchCard(id,move);
         if (sizeof(card) != 0) {
             // move 1 = ans 
             // 0 = discard
@@ -36,6 +36,10 @@ public:
                 addCardToDiscarded(card);
                 removeCardFromUnanswered();
             }
+            else if (move == 2) {
+                addCardToAnswered(card);
+                removeCardFromDiscarded();
+            }
             else {
                 cout << "illegal movement" << endl;
             }
@@ -46,10 +50,11 @@ public:
 
     }
 
-    int verifyAnsCard(int id, string ans) {
-        Card card = searchCard(id);
+    int verifyAnsCard(int id, string ans,int cardFrom) {
+        Card card = searchCard(id, cardFrom);
         int result = card.answer.compare(ans);
         int score = result==0?card.score:0;
+        score = cardFrom == 2 ? score * 0.8 : score;
         return score;
     }
 
@@ -59,10 +64,10 @@ public:
             cout << "Answered Cards: " << current->card.question << " with answer " << current->card.answer << " and score " << current->card.score << endl;
             current = current->next;
         }
-
+        
         current = unansweredHead;
         while (current != nullptr) {
-            cout << "Unanswered Cards: " << current->card.question << " with answer " << current->card.answer << " and score " << current->card.score << endl;
+            cout << "Unanswered Cards: " << current->card.question << " \n Answer: " << current->card.answer << " + score " << current->card.score << endl;
             current = current->next;
         }
 
@@ -74,7 +79,7 @@ public:
     }
 
     void printCurCard() {
-        cout << "Unanswered Card :\n" << unansweredHead->card.id << " - " << unansweredHead->card.question << endl;
+        cout << "\nUnanswered Card :\n" << unansweredHead->card.id << " - " << unansweredHead->card.question << endl;
     }
 
     void printDisCard() {
@@ -82,19 +87,20 @@ public:
         int head = 0;
         while (current != nullptr) {
             if (head == 0) {
-                cout << "Discarded Cards :" << endl;
+                cout << "\nDiscarded Cards :" << endl;
                 head++;
             }
             cout << current->card.id << " - " << current->card.question << endl;
             current = current->next;
         }
     }
+
     void printAnsCard() {
         CardNode* current = answeredHead;
         int head = 0;
         while (current != nullptr) {
             if (head == 0) {
-                cout << "Answered Cards :" << endl;
+                cout << "\nAnswered Cards :" << endl;
                 head++;
             }
             cout << " - " << current->card.question << endl;
@@ -102,7 +108,45 @@ public:
         }
     }
     // fix later this fucntion too shit
-    Card searchCard(int id) {
+    Card searchCard(int id,int from) {
+        CardNode* temp = unansweredHead;
+        CardNode* tempDiscard = discardedHead;
+        int i = 0;
+        bool found = false;
+        if (from == 1 || from == 0) {
+            if (temp == NULL) {
+                cout << "Empty List\n";
+            }
+            else {
+                while (temp != NULL) {
+                    i++;
+                    if (temp->card.id == id) {
+                        found = true;
+                        return temp->card;
+                    }
+                    temp = temp->next;
+                }
+            }
+        }
+        else if (from == 2) {
+            if (tempDiscard == NULL) {
+                cout << "Empty List\n";
+            }
+            else {
+                while (tempDiscard != NULL) {
+                    i++;
+                    if (tempDiscard->card.id == id) {
+                        found = true;
+                        return tempDiscard->card;
+                    }
+                    tempDiscard = tempDiscard->next;
+                }
+            }
+        }
+            
+    }
+
+    int searchCardFrom(int id) {
         CardNode* temp = unansweredHead;
         CardNode* tempDiscard = discardedHead;
         int i = 0;
@@ -116,7 +160,7 @@ public:
                 i++;
                 if (temp->card.id == id) {
                     found = true;
-                    return temp->card;
+                    return 1;
                 }
                 temp = temp->next;
             }
@@ -126,13 +170,14 @@ public:
                     i++;
                     if (tempDiscard->card.id == id) {
                         found = true;
-                        return tempDiscard->card;
+                        return 2;
                     }
                     tempDiscard = tempDiscard->next;
                 }
             }
             else {
                 cout << "Card ID not found..." << endl;
+                return 0;
             }
         }
     }
@@ -166,6 +211,15 @@ private:
 
         CardNode* temp = unansweredHead;
         unansweredHead = unansweredHead->next;
+        delete temp;
+    }
+    void removeCardFromDiscarded() {
+        if (discardedHead == nullptr) {
+            return;
+        }
+
+        CardNode* temp = discardedHead;
+        discardedHead = discardedHead->next;
         delete temp;
     }
     

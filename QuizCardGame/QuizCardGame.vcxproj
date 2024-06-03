@@ -133,11 +133,16 @@
     <ClInclude Include="Cards.hpp" />
     <ClInclude Include="Data.hpp" />
     <ClInclude Include="Decks.hpp" />
+    <ClInclude Include="Trees.hpp" />
     <ClInclude Include="Games.hpp" />
     <ClInclude Include="HashTable.hpp" />
+    <ClInclude Include="Header.h" />
     <ClInclude Include="import.h" />
     <ClInclude Include="Players.hpp" />
     <ClInclude Include="GameRecords.hpp" />
+    <ClInclude Include="PlayerStack.hpp" />
+    <ClInclude Include="ShuffleAlgo.hpp" />
+    <ClInclude Include="ReadCSV.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
