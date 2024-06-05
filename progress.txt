@@ -35,7 +35,7 @@ game record: hashmap
 player: stack
 rank: tree
 
-queue
+queue: realationship between student category
 graph
 
 algo:
