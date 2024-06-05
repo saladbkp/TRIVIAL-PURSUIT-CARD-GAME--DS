@@ -24,3 +24,4 @@
 #include "ShuffleAlgo.hpp"
 
 #include "Trees.hpp"
+#include "Graph.hpp"

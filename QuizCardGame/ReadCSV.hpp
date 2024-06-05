@@ -32,13 +32,14 @@ Card* readCardCSV(const std::string& filename) {
             std::getline(ss, idStr, ',');
             std::getline(ss, question, ',');
             std::getline(ss, answer, ',');
+            std::getline(ss, category, ',');
             std::getline(ss, difficultyStr, ',');
 
             //int id = stoi(idStr);
             int difficulty = stoi(difficultyStr);
             int points = difficulty * 10;
 
-            cards[index++] = Card(index+1, question, answer, difficulty, points);
+            cards[index++] = Card(index+1, question, answer, category, difficulty, points);
         }
 
         file.close();
@@ -80,3 +81,32 @@ Player* readPlayerCSV(const string& filename) {
     return players;
 }
 
+// tetsing
+void parseDataset(const string& filename, Graph& graph) {
+    ifstream file(filename);
+    string line;
+
+    while (getline(file, line)) {
+        stringstream ss(line);
+        string round, playerID, playerName, category, question, score;
+
+        getline(ss, round, ',');
+        getline(ss, playerID, ',');
+        getline(ss, playerName, ',');
+        getline(ss, category, ',');
+        getline(ss, question, ',');
+        getline(ss, score, ',');
+
+        int id = stoi(playerID);
+
+        if (graph.findStudent(id) == nullptr) {
+            graph.addStudent(id, playerName);
+        }
+        if (graph.findCategory(category) == nullptr) {
+            graph.addCategory(category);
+        }
+        graph.addScore(id, category);
+    }
+
+    file.close();
+}

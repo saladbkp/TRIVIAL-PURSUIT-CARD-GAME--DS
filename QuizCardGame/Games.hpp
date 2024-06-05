@@ -15,6 +15,7 @@ public:
 
     void initGame() {
         ////////////////// testing temp
+        gamerecord.inserttempdata();
         gamerecord.generateLeaderboard();
         system("pause");
 

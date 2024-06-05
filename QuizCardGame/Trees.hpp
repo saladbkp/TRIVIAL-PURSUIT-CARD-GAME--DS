@@ -153,7 +153,7 @@ public:
         displayList(head);
         auto end = chrono::high_resolution_clock::now(); // End time
         chrono::duration<double> elapsed = end - start;
-        cout << "Sorting time: " << elapsed.count() << " seconds" << endl; // Display shuffle time
+        cout << "Sorting time: " << elapsed.count() << " seconds" << endl; // Display time
         
         // Cleanup the linked list
         while (head != nullptr) {

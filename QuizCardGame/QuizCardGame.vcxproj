@@ -133,10 +133,11 @@
     <ClInclude Include="Cards.hpp" />
     <ClInclude Include="Data.hpp" />
     <ClInclude Include="Decks.hpp" />
+    <ClInclude Include="Graph.hpp" />
+    <ClInclude Include="GraphNode.hpp" />
     <ClInclude Include="Trees.hpp" />
     <ClInclude Include="Games.hpp" />
     <ClInclude Include="HashTable.hpp" />
-    <ClInclude Include="Header.h" />
     <ClInclude Include="import.h" />
     <ClInclude Include="Players.hpp" />
     <ClInclude Include="GameRecords.hpp" />

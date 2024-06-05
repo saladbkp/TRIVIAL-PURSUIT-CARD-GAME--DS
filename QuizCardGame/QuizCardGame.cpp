@@ -40,11 +40,11 @@ int main()
     displayMenu();
 
 
-    Card* cards = readCardCSV("Questions.csv");
+    Card* cards = readCardCSV("Question2.0.csv");
     Player* players = readPlayerCSV("Players.csv");
 
     //////////////////////////////// Shuffle cards
-    int numCards = countLines("Questions.csv");
+    int numCards = countLines("Question2.0.csv");
     ShuffleAlgo shuffleAlgo(cards, numCards);
     cards = shuffleAlgo.shuffle();
 

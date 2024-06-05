@@ -22,7 +22,7 @@ public:
     }
     // O(N) 
     Card* shuffle() {
-        cout << "\nShuffling Cards ... " << endl;
+        cout << "\n[Stack] Shuffling Cards ... " << endl;
         std::cout << "3... ";
         std::this_thread::sleep_for(std::chrono::seconds(1));
         std::cout << "2... ";

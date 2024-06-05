@@ -1,0 +1,15 @@
+1,1,Player1,Math,What is 2+2?,10
+1,2,Player2,Science,What is H2O?,8
+1,3,Player3,History,Who was the first president of the USA?,7
+2,1,Player1,Math,What is 5x5?,9
+2,2,Player2,Science,What is the chemical symbol for gold?,7
+2,3,Player3,History,When did WW2 end?,8
+3,1,Player1,Science,What is the speed of light?,10
+3,2,Player2,Math,What is the square root of 16?,9
+3,3,Player3,History,Who wrote the Declaration of Independence?,10
+1,4,Player4,Math,What is 10/2?,9
+2,4,Player4,Science,What is the boiling point of water?,8
+3,4,Player4,History,Who was the second president of the USA?,9
+1,5,Player5,Math,What is 3+3?,7
+2,5,Player5,Science,What is the chemical formula for salt?,8
+3,5,Player5,History,What year did the Titanic sink?,9

@@ -44,6 +44,7 @@ public:
 		entry->next = table[index];
 		table[index] = entry;
 	}
+	
 	GameRecordDetail  get(int key) {
 		int index = hash(key);
 		HashEntry* entry = table[index];
