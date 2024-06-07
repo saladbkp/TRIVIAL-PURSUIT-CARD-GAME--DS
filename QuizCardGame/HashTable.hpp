@@ -5,7 +5,7 @@ struct GameRecordDetail {
 	int playerID;
 	std::string playerName;
 	std::string cardQuestion;
-	int cardLevel;
+	std::string cardCategory;
 	int score;
 };
 
@@ -20,6 +20,7 @@ private:
 	};
 	HashEntry** table;
 public:
+	HashTable() {}
 	HashTable(int size) {
 		this->size = size;
 		table = new HashEntry * [size];

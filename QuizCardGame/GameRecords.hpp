@@ -2,36 +2,62 @@
 #include "import.h"
 #include "Trees.hpp"
 #include "Graph.hpp"
-#include "ReadCSV.hpp"
 
 class GameRecord {
 private:
 	HashTable records;
 	int nextGameID;
 	PlayerTree tree;
+	Graph graph;
 public:
 	GameRecord(int size) : records(size), nextGameID(1) {};
 
 	void addRecords(int round, Player player, Card card, int score) {
+		addFirstRecords(round, player.id, player.name, card.question, card.category, score);
+	}
+	void addFirstRecords(int round, int playerid, string playername, string cardquestion, string cardcategory, int score) {
 		GameRecordDetail gameDetail;
 		gameDetail.round = round;
-		gameDetail.playerID = player.id;
-		gameDetail.playerName = player.name;
-		gameDetail.cardQuestion = card.question;
-		gameDetail.cardLevel = card.level;
+		gameDetail.playerID = playerid;
+		gameDetail.playerName = playername;
+		gameDetail.cardQuestion = cardquestion;
+		gameDetail.cardCategory = cardcategory;
 		gameDetail.score = score;
+		// insert data
+		cout << "\n[HashMap, Tree, Graph] Inserting Gamerecord ... " << endl;
+		auto hashstart = chrono::high_resolution_clock::now(); // Start time
 		records.put(nextGameID, gameDetail);
+		auto hashend = chrono::high_resolution_clock::now(); // Start time
+		auto treestart = chrono::high_resolution_clock::now(); // Start time
+		tree.insert(round, playerid, playername, cardquestion, score);
+		auto treeend = chrono::high_resolution_clock::now(); // Start time
+		auto graphstart = chrono::high_resolution_clock::now(); // Start time
+		if (graph.findStudent(playerid) == nullptr) {
+			graph.addStudent(playerid, playername);
+		}
+		if (graph.findCategory(cardcategory) == nullptr) {
+			graph.addCategory(cardcategory);
+		}
+		graph.addScore(playerid, cardcategory,score);
+		auto graphend = chrono::high_resolution_clock::now(); // Start time
+		
+		auto hashelapsed = hashend - hashstart;
+		auto treeelapsed = treeend - treestart;
+		auto graphelapsed = graphend - graphstart;
+		cout << "[Hashmap] Inserting time: ID " << nextGameID << " " << hashelapsed.count() << " seconds" << endl; // Display Hashmap time
+		cout << "[Tree]    Inserting time: ID " << nextGameID << " " << treeelapsed.count() << " seconds" << endl; // Display Tree time
+		cout << "[Graph]   Inserting time: ID " << nextGameID << " " << graphelapsed.count() << " seconds" << endl; // Display Graph time
 		nextGameID++;
 	}
 	void printRecords() {
 		cout << "---------------------------------------------" << endl;
 		cout << "Game Record:\n" << endl;
 		auto start = chrono::high_resolution_clock::now(); // Start time
-		for (int i = 0; i < nextGameID; i++) {
+		for (int i = 1; i < nextGameID; i++) {
 			GameRecordDetail record = records.get(i);
 			cout << "Game ID: " << i << ", Game Round: " << record.round << endl;
 			cout << "Player ID: " << record.playerID << ", Player Name: " << record.playerName << endl;
-			cout << "Card Question: " << record.cardQuestion << ", Card Level: " << record.cardLevel << endl;
+			cout << "Card Question: " << record.cardQuestion << ", Card Category: " << record.cardCategory << endl;
 			cout << "Score: " << record.score << endl;
 			cout << endl;
 		}
@@ -44,12 +70,12 @@ public:
 		cout << "Game Record:\n" << endl;
 		auto start = chrono::high_resolution_clock::now(); // Start time
 		GameRecordDetail record = records.get(gameid);
-		if (sizeof(record)>0) {
+		if (sizeof(record) > 0) {
 			cout << "Game ID: " << gameid << ", Game Round: " << record.round << endl;
 			cout << "Player ID: " << record.playerID << ", Player Name: " << record.playerName << endl;
-			cout << "Card Question: " << record.cardQuestion << ", Card Level: " << record.cardLevel << endl;
+			cout << "Card Question: " << record.cardQuestion << ", Card Category: " << record.cardCategory << endl;
 			cout << "Score: " << record.score << endl;
-		}		
+		}
 		else {
 			cout << "Invalid Game ID" << endl;
 		}
@@ -57,6 +83,7 @@ public:
 		chrono::duration<double> elapsed = end - start;
 		cout << "Searching time: " << elapsed.count() << " seconds" << endl; // Display shuffle time
 	}
+
 	void inserttempdata() {
 		tree.insert(1, 1, "Player1", "q1", 10);
 		tree.insert(1, 2, "Player2", "q1", 20);
@@ -102,7 +129,7 @@ public:
 		else if (choice == 2) {
 			system("cls");
 			while (true) {
-				tree.drawdisplay();
+				tree.drawtreedisplay();
 				cout << "--------------------------------" << endl;
 				cout << "Search ID (0 to exit): ";
 				cin >> playerID;
@@ -120,7 +147,7 @@ public:
 				cout << "Search ID (0 to exit): ";
 				cin >> playerID;
 				if (playerID == 0) break;
-				tree.searchPlayerIDRank(playerID);
+				searchRecords(playerID);
 				pauseandClearScreen();
 			}
 			generateLeaderboard();
@@ -128,8 +155,8 @@ public:
 		else if (choice == 4) {
 			system("cls");
 			while (true) {
-				Graph graph;
-				parseDataset("Q3.csv", graph);
+				// data temp testing				
+				//parseDataset("Q3.csv", graph);
 				graph.displayGraph();
 				cout << "--------------------------------" << endl;
 				cout << "Search ID (0 to exit): ";

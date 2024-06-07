@@ -99,13 +99,15 @@ private:
 
     void displayList(ListNode* head) {
         ListNode* current = head;
+        int rank = 1;
         while (current != nullptr) {
             TreeNode* node = current->treeNode;
-            cout << "Player ID: " << node->playerID << ", Name: " << node->playerName << " , Total Score: " << node->totalScore << endl;
+            cout <<"Rank " << rank << " >>> Player ID: " << node->playerID << ", Name: " << node->playerName << " , Total Score: " << node->totalScore << endl;
             for (int i = 0; i < 3; ++i) {
                 cout << "  Round " << i + 1 << ": " << node->questions[i] << ", Score: " << node->scores[i] << endl;
             }
             current = current->next;
+            rank++;
         }
     }
     int searchPlayerRank(ListNode* head, int playerID) {
@@ -122,19 +124,50 @@ private:
 
         return -1; // Player not found
     }
+
     void drawList(ListNode* head, int level = 0) {
         if (head == nullptr) return;
 
         ListNode* current = head;
-        int count = 1;
+        int count = 0;
+        int pre = 0;
+        int addon = 0;
+        string players[16];
+            while (current != nullptr) {
+                if (count > 15) {
+                    break;
+                }
+                players[count] += std::to_string(current->treeNode->playerID);
+                
+                // 1 2 4 8 
+                cout << "Winner " << count << ": " << current->treeNode->playerID << " - " << current->treeNode->playerName << " (Score: " << current->treeNode->totalScore << ")" << endl;
 
-        while (current != nullptr) {
-            for (int i = 0; i < level; ++i) cout << "  ";
-            cout << "Winner " << count++ << ": " << current->treeNode->playerName << " (Score: " << current->treeNode->totalScore << ")" << endl;
-            current = current->next;
-        }
+                current = current->next;
+
+                count++;
+            }
+            
+            string bracket[] = {
+                    "                        " + players[0],
+                    "                        |",
+                    "          --------------------------",
+                    "          |                        |",
+                    "          " + players[1] + "                     " + players[2],
+                    "          |                        |",
+                    "     -----------------------------------------",
+                    "     |             |             |            |",
+                    "     " + players[3] + "          " + players[4] + "          " + players[5] + "         " + players[6],
+                    "     |             |             |            |",
+                    "  --------------------------------------------------",
+                    "  |      |      |      |      |      |      |      |",
+                    "  " + players[7] + "   " + players[8] + "   " + players[9] + "   " + players[10] + "   " + players[11] + "   " + players[12] + "   " + players[13] + "   " + players[14],
+            };
+
+            for (int i = 0; i < 13; i++) {
+                std::cout << bracket[i] << std::endl;
+            }
+            cout << endl;
     }
-
 
 public:
     PlayerTree() : root(nullptr) {}
@@ -164,7 +197,7 @@ public:
         
     }
 
-    void drawdisplay() {
+    void drawtreedisplay() {
         ListNode* head = nullptr;
         inOrder(root, head);
 

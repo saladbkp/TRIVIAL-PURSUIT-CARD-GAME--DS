@@ -20,9 +20,9 @@ public:
     Card* reset() {
         return cards4save; // Return the initial array
     }
-    // O(N) 
+    // time complexity O(N) 
     Card* shuffle() {
-        cout << "\n[Stack] Shuffling Cards ... " << endl;
+        cout << "\n[Fisher-Yates shuffle algorithm] Shuffling Cards ... " << endl;
         std::cout << "3... ";
         std::this_thread::sleep_for(std::chrono::seconds(1));
         std::cout << "2... ";

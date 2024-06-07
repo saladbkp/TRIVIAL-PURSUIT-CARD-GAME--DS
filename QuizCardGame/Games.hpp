@@ -14,10 +14,10 @@ public:
     Game(int round, Player players[], Deck deck) : round(round), players(players), deck(deck), gamerecord(GetPlayerNum()* round) {}
 
     void initGame() {
-        ////////////////// testing temp
-        gamerecord.inserttempdata();
+        //////////////////// testing temp
+        /*gamerecord.inserttempdata();
         gamerecord.generateLeaderboard();
-        system("pause");
+        system("pause");*/
 
         cout << "This game has " << round << " round" << endl;
         cout << "\nPlayers: " << endl;
@@ -59,9 +59,13 @@ public:
                             int cardSelectedFrom = deck.searchCardFrom(cardSelected);
 
                             if (cardSelectedFrom >0) {
+                                string answer;
                                 cout << "\nAns: ";
-                                cin >> choice;
-                                int score = deck.verifyAnsCard(cardSelected, choice, cardSelectedFrom);
+                                // solve for space cin
+                                cin.ignore(256, '\n');
+                                std::getline(std::cin, answer);
+                                std::stringstream linestream(answer);
+                                int score = deck.verifyAnsCard(cardSelected, answer, cardSelectedFrom);
                                 gamerecord.addRecords(ro+1, players[i], deck.searchCard(cardSelected, cardSelectedFrom), score);
                                 deck.drawCard(cardSelected, cardSelectedFrom); // 1 from unans 2 from discard
                                 if (score != 0) {
@@ -98,7 +102,9 @@ public:
     void showResult() {
         gamerecord.printRecords();
     }
-
+    void leaderboard() {
+        gamerecord.generateLeaderboard();
+    }
     int GetPlayerNum() {
         return playerNum;
     }

@@ -1,0 +1,210 @@
+1,1001,Emma Collins,Trees,A ____ is a hierarchical data structure with a root node and child nodes.,0
+1,1002,Liam Thompson,Trees,In a ____ tree each node has at most two children.,10
+1,1003,Olivia Johnson,Trees,A ____ tree is a binary tree in which the left and right subtrees of any node differ in height by at most one.,20
+1,1004,Noah Brown,Trees,The ____ traversal visits nodes in the order: left subtree root right subtree.,30
+1,1005,Ava Martinez,Trees,The ____ traversal visits nodes in the order: root left subtree right subtree.,8
+1,1006,William Davis,Trees,The ____ traversal visits nodes in the order: left subtree right subtree root.,16
+1,1007,Sophia Wilson,Trees,A ____ is a type of binary tree where each node has at most two children and every child node has at most two children.,24
+1,1008,James Garcia,Trees,In a ____ tree the parent node is always greater than or equal to its child nodes.,0
+1,1009,Isabella Anderson,Trees,In a ____ tree the parent node is always smaller than or equal to its child nodes.,10
+1,1010,Benjamin Lee,Trees,A ____ tree is a binary tree that maintains a specific order property.,20
+1,1011,Mia Clark,Trees,In a ____ tree each node contains a key and pointers to its child nodes.,30
+1,1012,Lucas Walker,Trees,A ____ tree is a tree where each node has exactly zero or two children.,8
+1,1013,Amelia Hall,Trees,In a ____ tree each node has exactly zero one or two children.,16
+1,1014,Henry Lewis,Trees,The ____ of a tree is the number of edges on the longest path from the root to a leaf.,24
+1,1015,Evelyn Young,Trees,The ____ of a node in a tree is the number of edges from the node to the tree's root node.,0
+1,1016,Alexander King,Trees,A ____ tree is a binary search tree that self-balances to maintain its height.,10
+1,1017,Harper Wright,Trees,The ____ algorithm is used to insert a node in a binary search tree.,20
+1,1018,Michael Scott,Trees,The ____ algorithm is used to delete a node from a binary search tree.,30
+1,1019,Abigail Baker,Trees,A ____ tree is a tree where nodes can have multiple children.,8
+1,1020,Daniel Green,Linked lists,In a ____ linked list the last node points back to the first node.,16
+1,1021,Emily Adams,Linked lists,A ____ is a single unit in a linked list containing data and a pointer to the next node.,24
+1,1022,Matthew Nelson,Linked lists,In a linked list the first node is called the ____.,0
+1,1023,Ella Carter,Linked lists,The last node in a linked list is known as the ____.,10
+1,1024,Aiden Mitchell,Linked lists,A ____ linked list allows traversal in both forward and backward directions.,20
+1,1025,Madison Perez,Linked lists,In a ____ linked list each node has a pointer to the next node but not to the previous node.,30
+1,1026,Jackson Roberts,Linked lists,In a ____ linked list each node has pointers to both the next and previous nodes.,8
+1,1027,Scarlett Turner,Linked lists,A ____ linked list is a collection of nodes where each node points to the next node in the sequence.,16
+1,1028,Logan Phillips,Linked lists,The ____ pointer of the last node in a linked list is set to null.,24
+1,1029,Grace Campbell,Linked lists,In a ____ linked list each node contains data and a reference to the next node.,0
+1,1030,Ethan Parker,Linked lists,A ____ linked list can be traversed starting from any node as it forms a loop.,10
+1,1031,Chloe Evans,Linked lists,In a ____ linked list each node has a reference to the previous node.,20
+1,1032,Jacob Edwards,Linked lists,The ____ operation in a linked list involves adding a new node at the beginning.,30
+1,1033,Victoria Collins,Linked lists,The ____ operation in a linked list involves removing the first node.,8
+1,1034,David Stewart,Linked lists,In a ____ linked list each node has a reference to both the next and previous nodes.,16
+1,1035,Aria Sanchez,Linked lists,The ____ operation in a linked list involves adding a new node at the end.,24
+1,1036,Joseph Morgan,Linked lists,In a ____ linked list each node points to the next node in the sequence.,0
+1,1037,Lily Rogers,Linked lists,The ____ operation in a linked list involves removing the last node.,10
+1,1038,Samuel Brooks,Linked lists,In a ____ linked list each node has a reference to the next node.,20
+1,1039,Zoey Reed,Linked lists,The ____ operation in a linked list involves adding a new node after a given node.,30
+1,1040,Anthony Bennett,Linked lists,A ____ is the basic element of a linked list.,8
+1,1041,Layla Foster,Graphs,A ____ is a collection of nodes connected by edges.,16
+1,1042,Christopher Hughes,Graphs,In a ____ graph the edges have no direction.,24
+1,1043,Nora Simmons,Graphs,In a ____ graph the edges have a direction.,0
+1,1044,Andrew Sanders,Graphs,The ____ of a graph is the number of vertices in the graph.,10
+1,1045,Hannah Patterson,Graphs,The ____ of a graph is the number of edges in the graph.,20
+1,1046,Joshua Price,Graphs,In a ____ graph there is a direct connection between every pair of nodes.,30
+1,1047,Riley Flores,Graphs,In a ____ graph the edges have weights associated with them.,8
+1,1048,Nathaniel Butler,Graphs,A ____ is a sequence of vertices connected by edges.,16
+1,1049,Penelope Barnes,Graphs,A ____ is a path in which no vertices are repeated.,24
+1,1050,Jack Ward,Graphs,A ____ is a path that starts and ends at the same vertex.,0
+1,1051,Lillian Gray,Graphs,A ____ graph contains no cycles.,10
+1,1052,Ryan Powell,Graphs,The ____ of a vertex is the number of edges connected to it.,20
+1,1053,Ellie Bryant,Graphs,A ____ is a subgraph that includes all the vertices and is connected.,30
+1,1054,Luke Ross,Graphs,A ____ is a connected subgraph that includes all the vertices and has no cycles.,8
+1,1055,Mila Ramirez,Graphs,The ____ of a graph is a tree that spans all the vertices with the minimum possible total edge weight.,16
+1,1056,Gabriel Griffin,Graphs,In a ____ graph every vertex has the same degree.,24
+1,1057,Addison Russell,Graphs,A ____ is a graph where all vertices can be divided into two disjoint sets.,0
+1,1058,Caleb Wood,Graphs,The ____ of a vertex is the number of edges directed into the vertex.,10
+1,1059,Paisley Cox,Graphs,The ____ of a vertex is the number of edges directed out of the vertex.,20
+1,1060,Isaac Bennett,Graphs,A ____ is a closed path with all edges and vertices distinct.,30
+1,1061,Leah Kelly,Graphs,The ____ algorithm is used to find the shortest path from a single source to all other vertices.,8
+1,1062,Julian Diaz,Stacks,A ____ is a linear data structure that follows the Last In First Out (LIFO) principle.,16
+1,1063,Audrey Morales,Stacks,The ____ operation adds an element to the top of the stack.,24
+1,1064,Owen Foster,Stacks,The ____ operation removes the top element from the stack.,0
+1,1065,Aurora Richardson,Stacks,The ____ operation returns the top element of the stack without removing it.,10
+1,1066,Levi Perry,Stacks,In a stack the last element added is the ____ element to be removed.,20
+1,1067,Savannah Cook,Stacks,A ____ stack is implemented using an array or linked list.,30
+1,1068,Dylan Cooper,Stacks,In a stack the ____ operation checks if the stack is empty.,8
+1,1069,Stella Bailey,Stacks,The ____ operation checks if the stack is full.,16
+1,1070,Zachary Bell,Stacks,In a stack the ____ pointer points to the top element.,24
+2,1001,Emma Collins,Stacks,The ____ function checks if the stack is full.,0
+2,1002,Liam Thompson,Stacks,In a stack the ____ pointer keeps track of the top element.,10
+2,1003,Olivia Johnson,Stacks,A ____ stack is implemented using a linked list.,20
+2,1004,Noah Brown,Stacks,The ____ operation adds an element to the stack.,30
+2,1005,Ava Martinez,Stacks,The ____ operation removes an element from the stack.,8
+2,1006,William Davis,Stacks,In a stack the ____ operation returns the top element without removing it.,16
+2,1007,Sophia Wilson,Stacks,The ____ operation removes all elements from the stack.,24
+2,1008,James Garcia,Stacks,A ____ stack is implemented using an array.,8
+2,1009,Isabella Anderson,Stacks,In a stack the ____ function checks if the stack is empty.,0
+2,1010,Benjamin Lee,Stacks,The ____ function checks if the stack is full.,10
+2,1011,Mia Clark,Stacks,In a stack the ____ pointer points to the top element.,20
+2,1012,Lucas Walker,Stacks,The ____ function adds an element to the stack.,30
+2,1013,Amelia Hall,Stacks,The ____ function removes an element from the stack.,16
+2,1014,Henry Lewis,Stacks,In a stack the ____ function returns the top element without removing it.,24
+2,1015,Evelyn Young,Stacks,The ____ function checks if the stack is empty.,24
+2,1016,Alexander King,Stacks,The ____ function checks if the stack is full.,8
+2,1017,Harper Wright,Stacks,In a stack the ____ pointer keeps track of the top element.,20
+2,1018,Michael Scott,Stacks,A ____ stack is implemented using an array or linked list.,0
+2,1019,Abigail Baker,Stacks,The ____ operation adds an element to the stack.,16
+2,1020,Daniel Green,Stacks,The ____ operation removes an element from the stack.,0
+2,1021,Emily Adams,Stacks,In a stack the ____ operation returns the top element without removing it.,10
+2,1022,Matthew Nelson,Stacks,The ____ operation removes all elements from the stack.,20
+2,1023,Ella Carter,Graphs,A ____ is a graph that does not change over time.,30
+2,1024,Aiden Mitchell,Graphs,In a ____ graph each edge connects exactly two different vertices.,8
+2,1025,Madison Perez,Graphs,A ____ graph is a graph where each edge has a weight and each edge receives a flow.,16
+2,1026,Jackson Roberts,Graphs,A ____ graph contains no self-loops.,24
+2,1027,Scarlett Turner,Graphs,In a ____ graph the sum of the degrees of all vertices is even.,0
+2,1028,Logan Phillips,Graphs,A ____ is a complete graph where every vertex is connected to every other vertex.,10
+2,1029,Grace Campbell,Graphs,In a ____ graph there are no multiple edges between any pair of vertices.,20
+2,1030,Ethan Parker,Graphs,The ____ algorithm is used to color a graph with the minimum number of colors.,30
+2,1031,Chloe Evans,Graphs,A ____ is a graph with vertices that can be divided into two independent sets.,8
+2,1032,Jacob Edwards,Graphs,In a ____ graph each vertex is connected to every other vertex.,16
+2,1033,Victoria Collins,Graphs,A ____ graph has no isolated vertices.,24
+2,1034,David Stewart,Linked lists,In a ____ linked list each node has a reference to the next node.,0
+2,1035,Aria Sanchez,Linked lists,The ____ operation in a linked list involves finding a node with a specific value.,10
+2,1036,Joseph Morgan,Linked lists,In a ____ linked list each node points to both the next and previous nodes.,20
+2,1037,Lily Rogers,Linked lists,The ____ operation in a linked list involves inserting a node before a given node.,30
+2,1038,Samuel Brooks,Linked lists,In a ____ linked list the nodes are arranged in a sequence where the last node points to the first node.,8
+2,1039,Zoey Reed,Linked lists,The ____ operation in a linked list involves deleting a node before a given node.,16
+2,1040,Anthony Bennett,Linked lists,In a ____ linked list each node contains data and a reference to the next node.,24
+2,1041,Layla Foster,Linked lists,The ____ operation in a linked list involves merging two linked lists.,0
+2,1042,Christopher Hughes,Linked lists,In a ____ linked list each node points to both the next node and the previous node.,10
+2,1043,Nora Simmons,Linked lists,The ____ operation in a linked list involves splitting the list into two parts.,20
+2,1044,Andrew Sanders,Linked lists,In a ____ linked list each node points to the next node in the sequence.,20
+2,1045,Hannah Patterson,Linked lists,The ____ operation in a linked list involves copying the list to another list.,30
+2,1046,Joshua Price,Linked lists,In a ____ linked list each node has a reference to the previous node.,8
+2,1047,Riley Flores,Linked lists,In a ____ linked list each node contains a data element and a reference to the next node.,16
+2,1048,Nathaniel Butler,Linked lists,The ____ pointer in a linked list is used to keep track of the first node.,24
+2,1049,Penelope Barnes,Linked lists,In a ____ linked list each node has references to both the next and previous nodes.,30
+2,1050,Jack Ward,Linked lists,The ____ pointer in a linked list is used to keep track of the last node.,34
+2,1051,Lillian Gray,Linked lists,In a ____ linked list the last node's next pointer points to null.,28
+2,1052,Ryan Powell,Linked lists,The ____ pointer in a linked list is used to point to the next node.,10
+2,1053,Ellie Bryant,Linked lists,In a ____ linked list the first node has a reference to the last node.,16
+2,1054,Luke Ross,Linked lists,The ____ pointer in a linked list is used to point to the previous node.,24
+2,1055,Mila Ramirez,Linked lists,In a ____ linked list each node points to the next node.,0
+2,1056,Gabriel Griffin,Linked lists,The ____ operation in a linked list involves reversing the order of nodes.,0
+2,1057,Addison Russell,Trees,In a ____ tree all leaf nodes are at the same level.,0
+2,1058,Caleb Wood,Trees,A ____ tree is a binary search tree that balances itself by rotating nodes.,10
+2,1059,Paisley Cox,Trees,The ____ of a node in a tree is the number of edges from the node to the root.,20
+2,1060,Isaac Bennett,Trees,A ____ tree is a type of self-balancing binary search tree.,30
+2,1061,Leah Kelly,Trees,In a ____ tree each node has a unique key and an associated value.,8
+2,1062,Julian Diaz,Trees,A ____ tree is a binary tree where every parent node has a value greater than or equal to its children.,16
+2,1063,Audrey Morales,Trees,A ____ tree is a binary tree where every parent node has a value smaller than or equal to its children.,24
+2,1064,Owen Foster,Trees,The ____ traversal visits nodes in a binary tree starting from the root and exploring as far as possible along each branch before backtracking.,10
+2,1065,Aurora Richardson,Trees,The ____ traversal visits nodes in a binary tree level by level.,20
+2,1066,Levi Perry,Trees,A ____ tree is a tree where each node has at most two children.,30
+2,1067,Savannah Cook,Trees,In a ____ tree the difference between the heights of the left and right subtrees of any node is at most one.,8
+2,1068,Dylan Cooper,Trees,A ____ tree is a binary search tree that maintains a balance by rotating nodes.,24
+2,1069,Stella Bailey,Trees,The ____ algorithm is used to traverse a binary tree in in-order.,16
+2,1070,Zachary Bell,Trees,The ____ algorithm is used to traverse a binary tree in pre-order.,24
+3,1001,Emma Collins,Linked lists,In a ____ linked list the last node has a reference to the first node.,8
+3,1002,Liam Thompson,Linked lists,The ____ pointer in a linked list points to the first node.,8
+3,1003,Olivia Johnson,Linked lists,In a ____ linked list the nodes are connected in a linear sequence.,8
+3,1004,Noah Brown,Linked lists,The ____ pointer in a linked list points to the next node.,10
+3,1005,Ava Martinez,Linked lists,In a ____ linked list the last node's next pointer points back to the first node.,20
+3,1006,William Davis,Linked lists,The ____ operation in a linked list involves traversing the list to find a specific node.,30
+3,1007,Sophia Wilson,Linked lists,In a ____ linked list the nodes are connected in a circular manner.,24
+3,1008,James Garcia,Linked lists,The ____ pointer in a linked list is null for the last node.,16
+3,1009,Isabella Anderson,Linked lists,In a ____ linked list each node has a reference to both the next and previous nodes.,16
+3,1010,Benjamin Lee,Linked lists,The ____ pointer in a linked list is null for the head node's previous pointer.,16
+3,1011,Mia Clark,Linked lists,In a ____ linked list each node points to the next node in the sequence.,8
+3,1012,Lucas Walker,Linked lists,The ____ operation in a linked list involves updating the reference to a specific node.,8
+3,1013,Amelia Hall,Linked lists,In a ____ linked list the last node points back to the first node forming a loop.,0
+3,1014,Henry Lewis,Linked lists,The ____ operation in a linked list involves adding a node at a specific position.,0
+3,1015,Evelyn Young,Linked lists,In a ____ linked list each node has a reference to the next node.,10
+3,1016,Alexander King,Linked lists,The ____ operation in a linked list involves removing a node from a specific position.,10
+3,1017,Harper Wright,Linked lists,In a ____ linked list each node points to the next node and the previous node.,10
+3,1018,Michael Scott,Linked lists,The ____ pointer in a linked list is used to access the next node.,20
+3,1019,Abigail Baker,Linked lists,In a ____ linked list the last node has a reference to the first node.,20
+3,1020,Daniel Green,Linked lists,The ____ pointer in a linked list is used to access the previous node.,30
+3,1021,Emily Adams,Stacks,The ____ function checks if the stack is empty.,8
+3,1022,Matthew Nelson,Stacks,The ____ function checks if the stack is full.,8
+3,1023,Ella Carter,Stacks,In a stack the ____ pointer keeps track of the top element.,0
+3,1024,Aiden Mitchell,Stacks,A ____ is a common use of a stack.,0
+3,1025,Madison Perez,Stacks,The ____ operation adds an element to the stack.,10
+3,1026,Jackson Roberts,Stacks,The ____ operation removes an element from the stack.,20
+3,1027,Scarlett Turner,Stacks,In a stack the ____ operation returns the top element without removing it.,20
+3,1028,Logan Phillips,Stacks,The ____ operation removes all elements from the stack.,10
+3,1029,Grace Campbell,Stacks,A ____ stack is implemented using an array or linked list.,24
+3,1030,Ethan Parker,Stacks,In a stack the ____ function checks if the stack is empty.,24
+3,1031,Chloe Evans,Stacks,The ____ function checks if the stack is full.,16
+3,1032,Jacob Edwards,Stacks,In a stack the ____ pointer points to the top element.,8
+3,1033,Victoria Collins,Stacks,The ____ function adds an element to the stack.,30
+3,1034,David Stewart,Stacks,The ____ function removes an element from the stack.,20
+3,1035,Aria Sanchez,Stacks,In a stack the ____ function returns the top element without removing it.,10
+3,1036,Joseph Morgan,Stacks,The ____ function checks if the stack is empty.,0
+3,1037,Lily Rogers,Stacks,The ____ function checks if the stack is full.,0
+3,1038,Samuel Brooks,Stacks,In a stack the ____ pointer keeps track of the top element.,0
+3,1039,Zoey Reed,Stacks,A ____ stack is implemented using a linked list.,0
+3,1040,Anthony Bennett,Stacks,The ____ operation adds an element to the stack.,16
+3,1041,Layla Foster,Stacks,The ____ operation removes an element from the stack.,16
+3,1042,Christopher Hughes,Graphs,In a ____ graph there is at least one path between any pair of vertices.,16
+3,1043,Nora Simmons,Graphs,A ____ is a subgraph that is a tree and includes all the vertices.,20
+3,1044,Andrew Sanders,Graphs,In a ____ graph edges may have weights or costs associated with them.,10
+3,1045,Hannah Patterson,Graphs,A ____ is a sequence of vertices where each adjacent pair is connected by an edge.,10
+3,1046,Joshua Price,Graphs,A ____ is a graph with no loops and no more than one edge between any two vertices.,10
+3,1047,Riley Flores,Graphs,A ____ is a graph that does not change over time.,0
+3,1048,Nathaniel Butler,Graphs,In a ____ graph each edge connects exactly two different vertices.,10
+3,1049,Penelope Barnes,Graphs,A ____ graph is a graph where each edge has a weight and each edge receives a flow.,20
+3,1050,Jack Ward,Graphs,A ____ graph contains no self-loops.,30
+3,1051,Lillian Gray,Graphs,In a ____ graph the sum of the degrees of all vertices is even.,8
+3,1052,Ryan Powell,Graphs,A ____ is a complete graph where every vertex is connected to every other vertex.,16
+3,1053,Ellie Bryant,Graphs,In a ____ graph there are no multiple edges between any pair of vertices.,24
+3,1054,Luke Ross,Graphs,The ____ algorithm is used to color a graph with the minimum number of colors.,0
+3,1055,Mila Ramirez,Graphs,A ____ is a graph with vertices that can be divided into two independent sets.,10
+3,1056,Gabriel Griffin,Graphs,In a ____ graph each vertex is connected to every other vertex.,20
+3,1057,Addison Russell,Graphs,A ____ graph has no isolated vertices.,30
+3,1058,Caleb Wood,Graphs,In a ____ graph the shortest path between any two vertices may involve passing through other vertices.,8
+3,1059,Paisley Cox,Trees,In a ____ tree the parent node is always greater than or equal to its child nodes.,16
+3,1060,Isaac Bennett,Trees,In a ____ tree the parent node is always smaller than or equal to its child nodes.,24
+3,1061,Leah Kelly,Trees,A ____ tree is a binary tree that maintains a specific order property.,0
+3,1062,Julian Diaz,Trees,In a ____ tree each node contains a key and pointers to its child nodes.,10
+3,1063,Audrey Morales,Trees,A ____ tree is a tree where each node has exactly zero or two children.,20
+3,1064,Owen Foster,Trees,In a ____ tree each node has exactly zero one or two children.,30
+3,1065,Aurora Richardson,Trees,The ____ of a tree is the number of edges on the longest path from the root to a leaf.,8
+3,1066,Levi Perry,Trees,The ____ of a node in a tree is the number of edges from the node to the tree's root node.,16
+3,1067,Savannah Cook,Trees,A ____ tree is a binary search tree that self-balances to maintain its height.,24
+3,1068,Dylan Cooper,Trees,The ____ algorithm is used to insert a node in a binary search tree.,16
+3,1069,Stella Bailey,Trees,The ____ algorithm is used to delete a node from a binary search tree.,30
+3,1070,Zachary Bell,Trees,A ____ tree is a tree where nodes can have multiple children.,10

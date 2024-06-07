@@ -1,5 +1,6 @@
 #pragma once
-#include "import.h"
+#include <string>
+#include "GameRecords.hpp"
 
 int countLines(string filename) {
     ifstream file(filename);
@@ -82,9 +83,14 @@ Player* readPlayerCSV(const string& filename) {
 }
 
 // tetsing
-void parseDataset(const string& filename, Graph& graph) {
+void parseDataset(const string& filename, GameRecord& gamerecord) {
     ifstream file(filename);
     string line;
+
+    if (!file.is_open()) {
+        cerr << "Unable to open file: " << filename << endl;
+        return;
+    }
 
     while (getline(file, line)) {
         stringstream ss(line);
@@ -97,15 +103,10 @@ void parseDataset(const string& filename, Graph& graph) {
         getline(ss, question, ',');
         getline(ss, score, ',');
 
+        int roundid = stoi(round);
         int id = stoi(playerID);
-
-        if (graph.findStudent(id) == nullptr) {
-            graph.addStudent(id, playerName);
-        }
-        if (graph.findCategory(category) == nullptr) {
-            graph.addCategory(category);
-        }
-        graph.addScore(id, category);
+        int scoreInt = stoi(score);
+        gamerecord.addFirstRecords(roundid, id, playerName, question, category, scoreInt);
     }
 
     file.close();

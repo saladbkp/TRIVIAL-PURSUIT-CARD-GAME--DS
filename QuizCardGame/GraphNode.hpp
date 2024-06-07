@@ -31,16 +31,16 @@ public:
 class QueueNode {
 public:
     StudentNode* studentNode;
+    int level;
     QueueNode* next;
 
-    QueueNode(StudentNode* node) : studentNode(node), next(nullptr) {}
+    QueueNode(StudentNode* node,int level) : studentNode(node), level(level), next(nullptr) {}
 };
 
 class Queue {
 private:
     QueueNode* front;
     QueueNode* rear;
-
 public:
     Queue() : front(nullptr), rear(nullptr) {}
 
@@ -48,8 +48,8 @@ public:
         return front == nullptr;
     }
 
-    void enqueue(StudentNode* studentNode) {
-        QueueNode* newNode = new QueueNode(studentNode);
+    void enqueue(StudentNode* studentNode,int level) {
+        QueueNode* newNode = new QueueNode(studentNode,level);
         if (rear == nullptr) {
             front = rear = newNode;
         }
@@ -59,7 +59,7 @@ public:
         }
     }
 
-    StudentNode* dequeue() {
+    QueueNode* dequeue() {
         if (isEmpty()) {
             return nullptr;
         }
@@ -68,9 +68,9 @@ public:
         if (front == nullptr) {
             rear = nullptr;
         }
-        StudentNode* studentNode = temp->studentNode;
-        delete temp;
-        return studentNode;
+        //QueueNode* dequeuedNode = temp;
+        //delete temp;
+        return temp;
     }
 };
 

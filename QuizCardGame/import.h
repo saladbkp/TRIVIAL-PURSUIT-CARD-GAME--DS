@@ -6,6 +6,7 @@
 #include <ctime>
 #include <chrono> // Include the chrono library for time measurement
 #include <thread> // time.sleep
+#include <cmath>  // count binary tree graph nodes 
 
 #include <fstream>
 #include <sstream>

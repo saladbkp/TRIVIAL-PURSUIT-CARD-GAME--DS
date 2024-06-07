@@ -43,15 +43,18 @@ public:
         return nullptr;
     }
 
-    void addScore(int playerID, string category) {
-        StudentNode* student = findStudent(playerID);
-        if (student != nullptr) {
-            student->addCategory(category);
-            CategoryNode* categoryNode = findCategory(category);
-            if (categoryNode != nullptr) {
-                categoryNode->addStudent(playerID);
+    void addScore(int playerID, string category,int score) {
+        if (score > 0) {
+            StudentNode* student = findStudent(playerID);
+            if (student != nullptr) {
+                student->addCategory(category);
+                CategoryNode* categoryNode = findCategory(category);
+                if (categoryNode != nullptr) {
+                    categoryNode->addStudent(playerID);
+                }
             }
         }
+        
     }
 
     void displayGraph() {
@@ -80,28 +83,37 @@ public:
         }
 
         Queue q;
-        q.enqueue(student);
+        q.enqueue(student,0);
 
         bool visited[100] = { false }; // Assuming max 100 students for simplicity
-        visited[playerID] = true;
+        visited[playerID-1000] = true;
 
         cout << "Students with common categories:" << endl;
 
         while (!q.isEmpty()) {
-            StudentNode* current = q.dequeue();
-
+            QueueNode* currentNode = q.dequeue();
+            StudentNode* current = currentNode->studentNode;
+            int currentLevel = currentNode->level;
+            delete currentNode;
             for (int i = 0; i < current->categoryCount; ++i) {
                 string category = current->categories[i];
                 CategoryNode* categoryNode = findCategory(category);
+
+                //cout << "Player have: " << categoryNode->category << endl;
                 if (categoryNode != nullptr) {
                     for (int j = 0; j < categoryNode->studentCount; ++j) {
                         int otherPlayerID = categoryNode->students[j];
-                        if (!visited[otherPlayerID]) {
-                            visited[otherPlayerID] = true;
+                        if (!visited[otherPlayerID-1000]) {
+                            visited[otherPlayerID-1000] = true;
                             StudentNode* otherStudent = findStudent(otherPlayerID);
                             if (otherStudent != nullptr) {
-                                cout << "Player " << otherStudent->playerID << " (" << otherStudent->playerName << ")" << endl;
-                                q.enqueue(otherStudent);
+                                if (j == 0) {
+                                    cout << "Common Category : " << categoryNode->category << " at Level : " << currentLevel + 1 << endl;
+                                }
+
+                                cout << "Player " << otherStudent->playerID << " (" << otherStudent->playerName << ")" << endl;                                
+                                q.enqueue(otherStudent, currentLevel + 1);
+
                             }
                         }
                     }
