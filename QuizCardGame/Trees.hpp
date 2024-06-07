@@ -102,7 +102,7 @@ private:
         int rank = 1;
         while (current != nullptr) {
             TreeNode* node = current->treeNode;
-            cout <<"Rank " << rank << " >>> Player ID: " << node->playerID << ", Name: " << node->playerName << " , Total Score: " << node->totalScore << endl;
+            cout <<"\nRank " << rank << " >>> Player ID: " << node->playerID << ", Name: " << node->playerName << " , Total Score: " << node->totalScore << endl;
             for (int i = 0; i < 3; ++i) {
                 cout << "  Round " << i + 1 << ": " << node->questions[i] << ", Score: " << node->scores[i] << endl;
             }
@@ -134,13 +134,13 @@ private:
         int addon = 0;
         string players[16];
             while (current != nullptr) {
-                if (count > 15) {
+                if (count > 14) {
                     break;
                 }
                 players[count] += std::to_string(current->treeNode->playerID);
                 
                 // 1 2 4 8 
-                cout << "Winner " << count << ": " << current->treeNode->playerID << " - " << current->treeNode->playerName << " (Score: " << current->treeNode->totalScore << ")" << endl;
+                cout << "Winner " << count+1 << ": " << current->treeNode->playerID << " - " << current->treeNode->playerName << " (Score: " << current->treeNode->totalScore << ")" << endl;
 
                 current = current->next;
 

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="QuizCardGame.cpp">
+    <ClCompile Include="Group_I_TP069847_TP072152_TP072020_TP068358_quiz_card_game..cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

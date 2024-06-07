@@ -65,7 +65,7 @@ public:
         while (current != nullptr) {
             cout << "Player " << current->playerID << " (" << current->playerName << ") can score in categories: ";
             for (int i = 0; i < current->categoryCount; ++i) {
-                cout << current->categories[i] << " ";
+                cout << current->categories[i] << ", ";
             }
             cout << endl;
             current = current->next;
@@ -87,7 +87,12 @@ public:
 
         bool visited[100] = { false }; // Assuming max 100 students for simplicity
         visited[playerID-1000] = true;
-
+        string cat = "";
+        for(int i=0;i<student->categoryCount;i++)
+            cat += student->categories[i]+", ";
+        cout << "This student strength:" << cat  << endl;
+        cout << endl;
+        system("pause");
         cout << "Students with common categories:" << endl;
 
         while (!q.isEmpty()) {
@@ -95,6 +100,7 @@ public:
             StudentNode* current = currentNode->studentNode;
             int currentLevel = currentNode->level;
             delete currentNode;
+            string precat = "";
             for (int i = 0; i < current->categoryCount; ++i) {
                 string category = current->categories[i];
                 CategoryNode* categoryNode = findCategory(category);
@@ -107,13 +113,20 @@ public:
                             visited[otherPlayerID-1000] = true;
                             StudentNode* otherStudent = findStudent(otherPlayerID);
                             if (otherStudent != nullptr) {
-                                if (j == 0) {
-                                    cout << "Common Category : " << categoryNode->category << " at Level : " << currentLevel + 1 << endl;
+                                if (precat != category) {
+                                    if (currentLevel==0) {
+                                        cout << "\nCommon Category : " << categoryNode->category << " at Level : " << currentLevel + 1 << endl;
+                                    }
+                                    else if (currentLevel > 0) {
+                                        cout << "\nAltenative Category : " << otherStudent->categories[0] << " at Level : " << currentLevel + 1 << ": [can study from these student]" << endl;
+                                        //cout << "From :" << "Player " << current->playerID << " (" << current->playerName << ")" << endl;
+                                    }
+                                    
                                 }
-
-                                cout << "Player " << otherStudent->playerID << " (" << otherStudent->playerName << ")" << endl;                                
+                                cout << "Player " << otherStudent->playerID << " (" << otherStudent->playerName << ")" << endl;
+                                
                                 q.enqueue(otherStudent, currentLevel + 1);
-
+                                precat = category;
                             }
                         }
                     }
