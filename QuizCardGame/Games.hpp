@@ -42,7 +42,7 @@ public:
                     
                     cout << "---------------------------------------------" << endl;
                     cout << "No Player : " << players[i].id << ", Name: " << players[i].name << "\n" << endl;
-                    cout << "Do u want to draw a card? (y/n): ";
+                    cout << "Do you want to draw a card? (y/n): ";
                     string choice;
                     cin >> choice;
                     if (choice.compare("y") == 0) {
@@ -50,7 +50,8 @@ public:
                         deck.printDisCard();
                         deck.printAnsCard();
 
-                        cout << "\nSelect the card u want to answer (ID/n for pass) : ";
+                        cout << "\nSelect the card that you want to answer!" << endl;
+                        cout << "Enter the Question ID or 'n' to pass: ";
                         cin >> choice;
                         int cardSelected = deck.unansweredHead->card.id; // get cur card id
                          
@@ -69,16 +70,16 @@ public:
                                 gamerecord.addRecords(ro+1, players[i], deck.searchCard(cardSelected, cardSelectedFrom), score);
                                 deck.drawCard(cardSelected, cardSelectedFrom); // 1 from unans 2 from discard
                                 if (score != 0) {
-                                    cout << "\nCongratulations + " << score << endl;
+                                    cout << "\nCongratulations, you've gained + " << score << endl;
                                 }
                                 else {
-                                    cout << "\nOpps ..." << endl;
+                                    cout << "\nWhoops! Try harder next time ~~" << endl;
                                 }
                                 break;
                             }
                             
                             else {
-                                cout << "\nThe id not match ..." << endl;
+                                cout << "\nThe Question ID does not match ..." << endl;
                             }
                         }
                         else {

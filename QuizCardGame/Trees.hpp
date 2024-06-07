@@ -132,9 +132,9 @@ private:
         int count = 0;
         int pre = 0;
         int addon = 0;
-        string players[16];
+        string players[32];
             while (current != nullptr) {
-                if (count > 14) {
+                if (count > 30) {
                     break;
                 }
                 players[count] += std::to_string(current->treeNode->playerID);
@@ -148,22 +148,29 @@ private:
             }
             
             string bracket[] = {
-                    "                        " + players[0],
-                    "                        |",
-                    "          --------------------------",
-                    "          |                        |",
-                    "          " + players[1] + "                     " + players[2],
-                    "          |                        |",
-                    "     -----------------------------------------",
-                    "     |             |             |            |",
-                    "     " + players[3] + "          " + players[4] + "          " + players[5] + "         " + players[6],
-                    "     |             |             |            |",
-                    "  --------------------------------------------------",
-                    "  |      |      |      |      |      |      |      |",
-                    "  " + players[7] + "   " + players[8] + "   " + players[9] + "   " + players[10] + "   " + players[11] + "   " + players[12] + "   " + players[13] + "   " + players[14],
+                    "",
+                    "                                                            RANK",
+                    "************************************************************************************************************************"
+                    "                                                            " + players[0],
+                    "                                                             |",
+                    "                                  ----------------------------------------------------",
+                    "                                  |                                                   |",
+                    "                                 " + players[1] + "                                               " + players[2],
+                    "                                  |                                                   |",
+                    "                 -----------------------------------                      ---------------------------------",
+                    "                 |                                 |                      |                               |",
+                    "               " + players[3] + "                              " + players[4] + "                    " + players[5] + "                           " + players[6],
+                    "                 |                                 |                      |                               |",
+                    "         ------------------                 ---------------        ----------------                 -------------- ",
+                    "         |                |                |              |        |               |                |             |",
+                    "       " + players[7] + "              " + players[8] + "            " + players[9] + "           " + players[10] + "     " + players[11] + "            " + players[12] + "             " + players[13] + "           " + players[14],
+                    "         |                |                |              |        |               |                |             |",
+                    "     --------        ---------         --------       --------    --------       --------        --------      --------", 
+                    "     |      |        |       |         |       |      |      |    |       |      |       |       |       |     |       |",
+                    "   " + players[15] + "    " + players[16] + "     " + players[17] + "    " + players[18] + "     " + players[19] + "    " + players[20] + "    " + players[21] + "   " + players[22] + " " + players[23] + "    " + players[24] + "   " + players[25] + "   " + players[26] + "   " + players[27] + "    " + players[28] + "  " + players[29] + "    " + players[30]
             };
 
-            for (int i = 0; i < 13; i++) {
+            for (int i = 0; i < 19; i++) {
                 std::cout << bracket[i] << std::endl;
             }
             cout << endl;
