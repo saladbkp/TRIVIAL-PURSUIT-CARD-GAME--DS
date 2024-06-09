@@ -44,9 +44,9 @@ public:
 		auto hashelapsed = hashend - hashstart;
 		auto treeelapsed = treeend - treestart;
 		auto graphelapsed = graphend - graphstart;
-		cout << "[Hashmap] Inserting time: ID " << nextGameID << " " << hashelapsed.count() << " seconds" << endl; // Display Hashmap time
-		cout << "[Tree]    Inserting time: ID " << nextGameID << " " << treeelapsed.count() << " seconds" << endl; // Display Tree time
-		cout << "[Graph]   Inserting time: ID " << nextGameID << " " << graphelapsed.count() << " seconds" << endl; // Display Graph time
+		cout << "[Hashmap] Inserting time: ID " << nextGameID << " " << hashelapsed.count()/1000 << " microseconds" << endl; // Display Hashmap time
+		cout << "[Tree]    Inserting time: ID " << nextGameID << " " << treeelapsed.count()/ 1000 << " microseconds" << endl; // Display Tree time
+		cout << "[Graph]   Inserting time: ID " << nextGameID << " " << graphelapsed.count()/ 1000 << " microseconds" << endl; // Display Graph time
 		nextGameID++;
 	}
 	void printRecords() {
@@ -122,6 +122,31 @@ public:
 				cin >> playerID;
 				if (playerID == 0) break;
 				tree.searchPlayerID(playerID);
+				// to count the avg time
+				/*double avg = 0;
+				double minTime = std::numeric_limits<double>::max();
+				double maxTime = 0;
+				double searchTime;
+				int minTimePlayerID = -1;
+				int maxTimePlayerID = -1;
+
+				for (int i = 1; i < 71; i++) {
+					int playerID = 1000 + i;
+					searchTime = tree.searchPlayerID(playerID);
+					avg += searchTime;
+					if (searchTime < minTime) {
+						minTime = searchTime;
+						minTimePlayerID = playerID;
+					}
+					if (searchTime > maxTime) {
+						maxTime = searchTime;
+						maxTimePlayerID = playerID;
+					}
+				}
+
+				cout << "\nAverage Searching Time: " << avg / 70 << " microseconds" << endl;
+				cout << "Minimum Searching Time: " << minTime << " microseconds (Player ID: " << minTimePlayerID << ")" << endl;
+				cout << "Maximum Searching Time: " << maxTime << " microseconds (Player ID: " << maxTimePlayerID << ")" << endl;*/
 				pauseandClearScreen();
 			}
 			generateLeaderboard();

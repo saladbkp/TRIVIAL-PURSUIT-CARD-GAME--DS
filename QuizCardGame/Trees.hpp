@@ -151,7 +151,7 @@ private:
                     "",
                     "                                                            RANK",
                     "************************************************************************************************************************"
-                    "                                                            " + players[0],
+                    "                                                             " + players[0],
                     "                                                             |",
                     "                                  ----------------------------------------------------",
                     "                                  |                                                   |",
@@ -240,10 +240,29 @@ public:
         cout << "Loop Searching time: " << elapsed.count() << " seconds" << endl; // Display time
     }
 
-    // search on id
-    void searchPlayerID(int playerid) {
+    // search on id [ori]
+    //void searchPlayerID(int playerid) {
+    //    auto start = chrono::high_resolution_clock::now(); // Start time
+    //    TreeNode* player = searchByID(root, playerid);
+    //    if (player != nullptr) {
+    //        cout << "Player ID: " << player->playerID << ", Name: " << player->playerName << ", Total Score: " << player->totalScore << endl;
+    //        for (int i = 0; i < 3; ++i) {
+    //            cout << "  Round " << i + 1 << ": " << player->questions[i] << ", Score: " << player->scores[i] << endl;
+    //        }
+    //    }
+    //    else {
+    //        cout << "Player not found." << endl;
+    //    }
+    //    auto end = chrono::high_resolution_clock::now(); // End time
+    //    chrono::duration<double, std::micro> elapsed = end - start;
+    //    cout << "Bianry Searching time: " << elapsed.count() << " seconds" << endl; // Display time
+    //}
+
+    // search on id and time
+    double searchPlayerID(int playerid) {
         auto start = chrono::high_resolution_clock::now(); // Start time
         TreeNode* player = searchByID(root, playerid);
+        auto end = chrono::high_resolution_clock::now(); // End time
         if (player != nullptr) {
             cout << "Player ID: " << player->playerID << ", Name: " << player->playerName << ", Total Score: " << player->totalScore << endl;
             for (int i = 0; i < 3; ++i) {
@@ -253,9 +272,10 @@ public:
         else {
             cout << "Player not found." << endl;
         }
-        auto end = chrono::high_resolution_clock::now(); // End time
-        chrono::duration<double> elapsed = end - start;
-        cout << "Bianry Searching time: " << elapsed.count() << " seconds" << endl; // Display time
+        
+        chrono::duration<double, std::micro> elapsed = end - start;
+        cout << "Bianry Searching time: " << elapsed.count() << " microseconds" << endl; // Display time
+        return elapsed.count();
     }
 
 };
